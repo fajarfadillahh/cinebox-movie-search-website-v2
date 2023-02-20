@@ -1,0 +1,39 @@
+/* font: clash display */
+@font-face {
+  font-family: "Clash Display";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ClashDisplay/ClashDisplay-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Clash Display";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/ClashDisplay/ClashDisplay-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Clash Display";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/ClashDisplay/ClashDisplay-Semibold.ttf") format("truetype");
+}
+
+/* font: poppins */
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+}
