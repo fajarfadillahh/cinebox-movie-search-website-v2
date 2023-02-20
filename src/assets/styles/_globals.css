@@ -1,5 +1,5 @@
 /* swiper navigation */
 .swiper-button-prev,
 .swiper-button-next {
-  @apply inline-flex cursor-pointer border-2 border-blue-600 p-1 text-[2rem] text-white transition hover:bg-blue-600 hover:text-white;
+  @apply inline-flex cursor-pointer border-2 border-blue-600 p-1 text-[1.5rem] text-white transition hover:bg-blue-600 hover:text-white;
 }
