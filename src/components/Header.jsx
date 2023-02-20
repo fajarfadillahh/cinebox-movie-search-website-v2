@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { RiMenu3Fill, RiCloseFill } from "react-icons/ri";
 
@@ -7,6 +7,8 @@ import Navbar from "./Navbar/Navbar";
 import NavbarMobile from "./Navbar/NavbarMobile";
 
 const Header = () => {
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 mx-auto max-w-[1440px]">
       <div className="container flex h-24 items-center justify-between md:relative">
@@ -21,9 +23,12 @@ const Header = () => {
         </Link>
 
         {/* navbar & toggle menu - mobile version */}
-        <NavbarMobile />
-        <div className="inline-flex cursor-pointer p-1 text-[1.5rem] text-white hover:bg-gray-800 md:hidden">
-          <RiMenu3Fill />
+        <NavbarMobile navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
+        <div
+          className="inline-flex cursor-pointer p-1 text-[1.5rem] text-white hover:bg-gray-800 md:hidden"
+          onClick={() => setNavbarOpen(!navbarOpen)}
+        >
+          {navbarOpen ? <RiCloseFill /> : <RiMenu3Fill />}
         </div>
       </div>
     </header>
