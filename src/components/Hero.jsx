@@ -2,21 +2,27 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="section relative pt-40">
+    <section className="section relative pt-40 xl:pt-48">
       <div className="container">
-        <div className="grid gap-6 text-center">
-          <h1 className="section-title text-[48px]">
-            Find your favorite movies <span className="text-blue-600">.</span>
-          </h1>
-          <form className="grid gap-2">
+        <div className="grid justify-items-center gap-8">
+          <div className="text-center">
+            <h1 className="section-title pb-3 text-[42px] lg:text-[56px]">
+              Find your favorite movies <span className="text-blue-600">.</span>
+            </h1>
+            <p className="section-text mx-auto max-w-[310px]">
+              Millions of Movies, TV Show, and People to discover. Explore now.
+            </p>
+          </div>
+
+          <form className="flex flex-col gap-2 sm:flex-row sm:items-center">
             <input
               type="text"
               placeholder="Search a movie, tv show, or more..."
-              className="flex h-[52px] w-full bg-gray-800 text-center font-title font-semibold text-white outline-none placeholder:font-sans placeholder:font-medium placeholder:-tracking-tighter placeholder:text-gray-400"
+              className="flex h-[52px] w-full bg-gray-800 px-4 text-center font-title font-semibold text-white outline-none placeholder:font-sans placeholder:font-medium placeholder:-tracking-tighter placeholder:text-gray-400 sm:w-[450px] sm:text-left"
             />
             <button
               type="submit"
-              className="btn w-full"
+              className="btn"
               onClick={(e) => e.preventDefault()}
             >
               Search
