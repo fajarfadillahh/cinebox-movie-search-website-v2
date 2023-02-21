@@ -2,10 +2,11 @@ import React from "react";
 
 // import swiper components & modules
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+import { Navigation, Keyboard, FreeMode, Mousewheel } from "swiper";
 
 // import swiper styles
 import "swiper/css";
+import "swiper/css/free-mode";
 
 // import movielist data & movie card
 import { MovieList } from "../../Data";
@@ -20,7 +21,12 @@ const MovieSlider = () => {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       }}
-      modules={[Navigation]}
+      keyboard={{
+        enabled: true,
+      }}
+      freeMode={true}
+      mousewheel={true}
+      modules={[Navigation, Keyboard, FreeMode, Mousewheel]}
     >
       {MovieList.map((movie) => {
         return (
