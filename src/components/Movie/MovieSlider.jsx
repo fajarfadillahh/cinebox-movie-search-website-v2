@@ -2,7 +2,7 @@ import React from "react";
 
 // import swiper components & modules
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Keyboard, FreeMode, Mousewheel } from "swiper";
+import { Keyboard, FreeMode, Mousewheel } from "swiper";
 
 // import swiper styles
 import "swiper/css";
@@ -17,16 +17,12 @@ const MovieSlider = () => {
     <Swiper
       slidesPerView={"auto"}
       spaceBetween={24}
-      navigation={{
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      }}
       keyboard={{
         enabled: true,
       }}
       freeMode={true}
       mousewheel={true}
-      modules={[Navigation, Keyboard, FreeMode, Mousewheel]}
+      modules={[Keyboard, FreeMode, Mousewheel]}
     >
       {TrendingMovie.map((movie) => {
         return (
