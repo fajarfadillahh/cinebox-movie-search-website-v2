@@ -3,3 +3,14 @@
 .swiper-button-next {
   @apply inline-flex cursor-pointer border-2 border-blue-600 p-1 text-[1.5rem] text-white transition hover:bg-blue-600 hover:text-white;
 }
+
+/* ::selection & ::-webkit-scrollbar */
+::selection {
+  @apply bg-pink-500 text-white;
+}
+::-webkit-scrollbar {
+  @apply w-2 bg-gray-800;
+}
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-gray-700 hover:bg-pink-500;
+}
