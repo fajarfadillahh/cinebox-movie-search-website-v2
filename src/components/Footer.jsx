@@ -12,7 +12,7 @@ import { FooterLinks } from "../Data";
 
 const Footer = () => {
   return (
-    <footer className="relative pt-40 pb-8">
+    <footer className="relative pt-60 pb-8">
       <div className="container grid justify-items-center gap-8">
         <ul className="flex items-center gap-8">
           {[

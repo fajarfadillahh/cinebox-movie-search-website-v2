@@ -10,6 +10,7 @@ import ScrollToTop from "../components/Scrolling/ScrollToTop";
 
 // import parts
 import Trending from "../parts/HomePage/Trending";
+import Popular from "../parts/HomePage/Popular";
 
 const Home = () => {
   return (
@@ -18,7 +19,7 @@ const Home = () => {
         <Header />
         <Hero />
         <Trending />
-        <div className="h-[300px]" />
+        <Popular />
         <Footer />
         <ScrollUp />
         <ScrollToTop />
