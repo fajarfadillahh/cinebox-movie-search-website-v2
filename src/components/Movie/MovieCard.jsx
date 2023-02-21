@@ -3,9 +3,7 @@ import React from "react";
 // import tmdb icon
 import TMDBIcon from "../../assets/images/tmdb-icon.svg";
 
-const MovieCard = (props) => {
-  const { poster, releaseDate, title, rating } = props;
-
+const MovieCard = ({ poster, releaseDate, title, rating }) => {
   return (
     <div className="group grid gap-6">
       <div className="overflow-hidden">

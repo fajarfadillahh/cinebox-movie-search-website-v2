@@ -9,10 +9,9 @@ import "swiper/css";
 import "swiper/css/free-mode";
 
 // import movielist data & movie card
-import { TrendingMovie } from "../../Data";
 import MovieCard from "./MovieCard";
 
-const MovieSlider = () => {
+const MovieSlider = ({ movies }) => {
   return (
     <Swiper
       slidesPerView={"auto"}
@@ -24,7 +23,7 @@ const MovieSlider = () => {
       mousewheel={true}
       modules={[Keyboard, FreeMode, Mousewheel]}
     >
-      {TrendingMovie.map((movie) => {
+      {movies.map((movie) => {
         return (
           <SwiperSlide key={movie.id} className="max-w-[250px]">
             <MovieCard

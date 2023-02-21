@@ -1,10 +1,14 @@
-import React from "react";
-import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
+import React, { useState } from "react";
+
+// import popular movie data
+import { PopularMovie } from "../../Data";
 
 // import components
 import MovieSlider from "../../components/Movie/MovieSlider";
 
 const Popular = () => {
+  const [movies, setMovies] = useState(PopularMovie);
+
   return (
     <section className="section relative">
       <div className="container grid gap-8">
@@ -18,7 +22,7 @@ const Popular = () => {
         </div>
 
         {/* popular - movie slider */}
-        <MovieSlider />
+        <MovieSlider movies={movies} />
       </div>
     </section>
   );
