@@ -25,6 +25,21 @@ export const HeaderLinks = [
   },
 ];
 
+export const FooterLinks = [
+  {
+    name: "Terms of use",
+    path: "/terms-of-use",
+  },
+  {
+    name: "Privacy policy",
+    path: "/privacy-policy",
+  },
+  {
+    name: "About cinebox",
+    path: "/about",
+  },
+];
+
 export const MovieList = [
   {
     id: 1,
