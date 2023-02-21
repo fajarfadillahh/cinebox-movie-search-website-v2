@@ -4,7 +4,9 @@ import React from "react";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Footer from "../components/Footer";
-import ScrollToTop from "../components/ScrollToTop";
+
+import ScrollUp from "../components/Scrolling/ScrollUp";
+import ScrollToTop from "../components/Scrolling/ScrollToTop";
 
 // import parts
 import Trending from "../parts/HomePage/Trending";
@@ -18,6 +20,7 @@ const Home = () => {
         <Trending />
         <div className="h-[300px]" />
         <Footer />
+        <ScrollUp />
         <ScrollToTop />
       </div>
     </>
