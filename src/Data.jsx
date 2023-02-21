@@ -1,12 +1,12 @@
 // import images
-import MovieImg1 from "./assets/images/movie-img-(1).jpg";
-import MovieImg2 from "./assets/images/movie-img-(2).jpg";
-import MovieImg3 from "./assets/images/movie-img-(3).jpg";
-import MovieImg4 from "./assets/images/movie-img-(4).jpg";
-import MovieImg5 from "./assets/images/movie-img-(5).jpg";
-import MovieImg6 from "./assets/images/movie-img-(6).jpg";
-import MovieImg7 from "./assets/images/movie-img-(7).jpg";
-import MovieImg8 from "./assets/images/movie-img-(8).jpg";
+import TrendingImg1 from "./assets/images/trending-img-(1).jpg";
+import TrendingImg2 from "./assets/images/trending-img-(2).jpg";
+import TrendingImg3 from "./assets/images/trending-img-(3).jpg";
+import TrendingImg4 from "./assets/images/trending-img-(4).jpg";
+import TrendingImg5 from "./assets/images/trending-img-(5).jpg";
+import TrendingImg6 from "./assets/images/trending-img-(6).jpg";
+import TrendingImg7 from "./assets/images/trending-img-(7).jpg";
+import TrendingImg8 from "./assets/images/trending-img-(8).jpg";
 
 export const HeaderLinks = [
   {
@@ -42,59 +42,59 @@ export const FooterLinks = [
   },
 ];
 
-export const MovieList = [
+export const TrendingMovie = [
   {
     id: 1,
-    poster: MovieImg1,
+    poster: TrendingImg1,
     title: "Stranger Things",
     release_date: "Jan 15, 2023",
     rating: 8.5,
   },
   {
     id: 2,
-    poster: MovieImg2,
+    poster: TrendingImg2,
     title: "Batman Begins",
     release_date: "Jan 15, 2023",
     rating: 8.5,
   },
   {
     id: 3,
-    poster: MovieImg3,
+    poster: TrendingImg3,
     title: "Spider-Man: Into The Spider-Verse",
     release_date: "Jan 15, 2023",
     rating: 8.5,
   },
   {
     id: 4,
-    poster: MovieImg4,
+    poster: TrendingImg4,
     title: "Dunkirk",
     release_date: "Jan 15, 2023",
     rating: 8.5,
   },
   {
     id: 5,
-    poster: MovieImg5,
+    poster: TrendingImg5,
     title: "The Last Of Us",
     release_date: "Jan 15, 2023",
     rating: 8.5,
   },
   {
     id: 6,
-    poster: MovieImg6,
+    poster: TrendingImg6,
     title: "The Big 4",
     release_date: "Jan 15, 2023",
     rating: 8.5,
   },
   {
     id: 7,
-    poster: MovieImg7,
+    poster: TrendingImg7,
     title: "Mencuri Raden Saleh",
     release_date: "Jan 15, 2023",
     rating: 8.5,
   },
   {
     id: 8,
-    poster: MovieImg8,
+    poster: TrendingImg8,
     title: "Avatar: The Way Of Water",
     release_date: "Jan 15, 2023",
     rating: 8.5,
