@@ -34,7 +34,7 @@ const Footer = () => {
           })}
         </ul>
 
-        <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
+        <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 sm:gap-x-20">
           {FooterLinks.map((link, index) => {
             return (
               <li key={index}>
