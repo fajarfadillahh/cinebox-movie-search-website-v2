@@ -5,9 +5,18 @@ const apiKey = import.meta.env.VITE_APIKEY;
 
 // get trending movies
 export const getTrendingMovies = async () => {
-  const movies = await axios.get(`
+  const trendingMovies = await axios.get(`
     ${baseUrl}/trending/movie/week?api_key=${apiKey}
   `);
 
-  return movies.data.results;
+  return trendingMovies.data.results;
+};
+
+// get popular movies
+export const getPopularMovies = async () => {
+  const popularMovies = await axios.get(`
+    ${baseUrl}/movie/popular?api_key=${apiKey}&language=en-US&page=1
+  `);
+
+  return popularMovies.data.results;
 };

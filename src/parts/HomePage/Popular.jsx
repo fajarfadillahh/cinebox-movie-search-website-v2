@@ -1,13 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 // import popular movie data
-import { PopularMovie } from "../../Data";
+import { getPopularMovies } from "../../Api";
 
 // import components
-// import MovieSlider from "../../components/Movie/MovieSlider";
+import MovieSlider from "../../components/Movie/MovieSlider";
 
 const Popular = () => {
-  const [movies, setMovies] = useState(PopularMovie);
+  const [movies, setMovies] = useState([]);
+
+  useEffect(() => {
+    getPopularMovies()
+      .then((result) => {
+        setMovies(result);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
   return (
     <section className="section relative">
@@ -22,7 +32,7 @@ const Popular = () => {
         </div>
 
         {/* popular - movie slider */}
-        {/* <MovieSlider movies={movies} /> */}
+        <MovieSlider movies={movies} />
       </div>
     </section>
   );
