@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section className="section relative pt-40 xl:pt-48">
       {/* gradient */}
-      <div className="absolute -top-[60px] -left-[150px] h-[400px] w-[400px] rounded-full bg-gradient-to-t from-purple-600 to-pink-400 blur-[120px] lg:h-[500px] lg:w-[500px]" />
+      <div className="absolute -top-[60px] -left-[150px] h-[400px] w-[400px] rounded-full bg-gradient-to-t from-purple-600 to-pink-400 blur-[120px] lg:h-[500px] lg:w-[500px] lg:blur-[150px]" />
 
       <div className="container relative">
         <div className="grid gap-8">

@@ -13,7 +13,10 @@ import { FooterLinks } from "../Data";
 const Footer = () => {
   return (
     <footer className="relative pt-60 pb-8">
-      <div className="container grid justify-items-center gap-8">
+      {/* gradient */}
+      <div className="absolute -bottom-[60px] -right-[150px] h-[400px] w-[400px] rounded-full bg-gradient-to-t from-red-500 to-yellow-300 blur-[120px] lg:blur-[150px]" />
+
+      <div className="container relative grid justify-items-center gap-8">
         <ul className="flex items-center gap-8">
           {[
             [<RiTwitterFill />, "/"],
