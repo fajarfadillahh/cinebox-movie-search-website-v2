@@ -3,7 +3,10 @@ import React from "react";
 const Hero = () => {
   return (
     <section className="section relative pt-40 xl:pt-48">
-      <div className="container">
+      {/* gradient */}
+      <div className="absolute -top-[60px] -left-[150px] h-[400px] w-[400px] rounded-full bg-gradient-to-t from-purple-600 to-pink-400 blur-[120px] lg:h-[500px] lg:w-[500px]" />
+
+      <div className="container relative">
         <div className="grid gap-8">
           <div className="text-center">
             <h1 className="section-title pb-3 text-[42px] lg:text-[56px]">
