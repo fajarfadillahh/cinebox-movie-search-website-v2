@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { PopularMovie } from "../../Data";
 
 // import components
-import MovieSlider from "../../components/Movie/MovieSlider";
+// import MovieSlider from "../../components/Movie/MovieSlider";
 
 const Popular = () => {
   const [movies, setMovies] = useState(PopularMovie);
@@ -22,7 +22,7 @@ const Popular = () => {
         </div>
 
         {/* popular - movie slider */}
-        <MovieSlider movies={movies} />
+        {/* <MovieSlider movies={movies} /> */}
       </div>
     </section>
   );

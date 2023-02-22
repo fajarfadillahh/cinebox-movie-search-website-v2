@@ -1,13 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 // import trending movie data
-import { TrendingMovie } from "../../Data";
+import { getTrendingMovies } from "../../Api";
 
 // import components
 import MovieSlider from "../../components/Movie/MovieSlider";
 
 const Trending = () => {
-  const [movies, setMovies] = useState(TrendingMovie);
+  const [movies, setMovies] = useState([]);
+
+  useEffect(() => {
+    getTrendingMovies()
+      .then((result) => {
+        setMovies(result);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
   return (
     <section className="section relative">

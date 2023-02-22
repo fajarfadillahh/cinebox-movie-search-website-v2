@@ -27,10 +27,10 @@ const MovieSlider = ({ movies }) => {
         return (
           <SwiperSlide key={movie.id} className="max-w-[250px]">
             <MovieCard
-              poster={movie.poster}
+              poster={`${import.meta.env.VITE_BASEURLIMG}/${movie.poster_path}`}
               releaseDate={movie.release_date}
               title={movie.title}
-              rating={movie.rating}
+              rating={movie.vote_average}
             />
           </SwiperSlide>
         );
