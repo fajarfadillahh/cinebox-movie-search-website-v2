@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 // import header-links data
 import { HeaderLinks } from "../../Data";
@@ -11,9 +11,12 @@ const Navbar = () => {
         {HeaderLinks.map((link, index) => {
           return (
             <li key={index}>
-              <Link to={link.path} className="section-text hover:text-blue-600">
+              <NavLink
+                to={link.path}
+                className="section-text navbar-link hover:text-gray-300"
+              >
                 {link.name}
-              </Link>
+              </NavLink>
             </li>
           );
         })}

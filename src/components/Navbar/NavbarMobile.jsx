@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 // import header-links data
 import { HeaderLinks } from "../../Data";
@@ -32,12 +32,12 @@ const NavbarMobile = ({ navbarOpen, setNavbarOpen }) => {
         {HeaderLinks.map((link, index) => {
           return (
             <li key={index}>
-              <Link
+              <NavLink
                 to={link.path}
-                className="section-text flex h-[52px] items-center px-4 hover:bg-gray-900/40"
+                className="section-text navbar-link flex h-[52px] items-center px-4 hover:bg-gray-900/40"
               >
                 {link.name}
-              </Link>
+              </NavLink>
             </li>
           );
         })}

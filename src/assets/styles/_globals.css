@@ -8,3 +8,8 @@
 ::-webkit-scrollbar-thumb {
   @apply rounded-full bg-gray-700 hover:bg-pink-500;
 }
+
+/* active -  navbar link */
+.navbar-link.active {
+  @apply text-blue-600;
+}
