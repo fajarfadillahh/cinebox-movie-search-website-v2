@@ -31,7 +31,6 @@ const MovieSlider = ({ movies }) => {
               releaseDate={movie.release_date}
               title={movie.title}
               rating={movie.vote_average}
-              genreMovie={movie.genre_ids}
             />
           </SwiperSlide>
         );

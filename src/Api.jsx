@@ -20,12 +20,3 @@ export const getPopularMovies = async () => {
 
   return popularMovies.data.results;
 };
-
-// get genre movies
-export const getGenreMovies = async () => {
-  const genreMovies = await axios.get(`
-    ${baseUrl}/genre/movie/list?api_key=${apiKey}&language=en-US
-  `);
-
-  return genreMovies.data.genres;
-};
